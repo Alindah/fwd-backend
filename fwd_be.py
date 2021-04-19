@@ -10,8 +10,8 @@ app = Flask(__name__)
 api = Api(app)
 
 class ReturnLength(Resource):
-    def get(self):
-    	return "Greetings planet"
+	def get(self):
+		return "Greetings planet"
 
 	def post(self):
 		str_received = request.form['usr_input']
@@ -20,5 +20,5 @@ class ReturnLength(Resource):
 api.add_resource(ReturnLength, '/')
 
 if __name__ == '__main__':
-    app.run(debug=True, host="localhost", port=5000)
+	app.run(debug=True, host="localhost", port=5000)
 
